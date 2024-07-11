@@ -1,0 +1,243 @@
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  background-color: #f5f5f5;
+  /* padding: 20px; */
+}
+
+.login-container {
+  display: flex;
+  background: whitesmoke;
+  background-color: #f5f5f5;
+  /* border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  /* max-width: 1200px; */
+  width: 100%;
+  height: 700px;
+  margin: 0 0px;
+}
+
+.login-form {
+  padding: 40px 60px;
+  margin: 50px 50px 20px 50px;
+  /* max-width: 400px; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 500px;
+  padding-left: 80px;
+  background: white;
+}
+
+.login-form h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.login-form p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative; /* Ensure relative positioning for the input */
+}
+
+#email {
+  width: 87.5%;
+}
+
+.remember {
+  display: flex;
+}
+
+#checkbox {
+  padding-top: 16px;
+  margin: 3px;
+}
+
+#forget_pass {
+  padding-left: 30px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-forgot a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d72661;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #c61b54;
+}
+
+.or-separator {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #aaa;
+  position: relative;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.or-separator::before {
+  left: 0;
+}
+
+.or-separator::after {
+  right: 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-button.google {
+  background-color: white;
+  color: #4285f4;
+}
+
+.social-button.apple {
+  background-color: black;
+  color: white;
+}
+
+.social-button:hover {
+  background-color: #f5f5f5;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-image {
+  width: 50%;
+  height: 500px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-color: #f5f5f5;
+  padding: 0px 0px 0px 0px;
+  flex: 1;
+}
+
+.login-image img {
+  max-width: 80%;
+  height: auto;
+  padding: 50px 0px 10px 0px;
+  border-radius: 0 10px 10px 0;
+}
+
+
+
+.password-input-container input {
+  width: calc(100% - 40px); 
+}
+
+.password-input-container span{
+  size: 1.5rem;
+  margin-right: 918px;
+  padding-bottom: 22px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    padding: 30px 20px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form h1 {
+    font-size: 20px;
+  }
+
+  .login-form p,
+  .login-form button,
+  .social-button {
+    font-size: 14px;
+  }
+
+  .login-form input {
+    padding: 8px;
+  }
+
+  .login-container {
+    padding: 10px;
+  }
+}

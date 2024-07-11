@@ -1,0 +1,254 @@
+/* Base Styles */
+.change-container {
+  display: flex;
+  /* flex-direction: column; Stack elements vertically on smaller screens */
+  justify-content: center; /* Center elements vertically */
+  align-items: center;
+  padding: 50px;
+  padding-top: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 70vh;
+  gap: 20px; /* Space between form and image */
+}
+
+.change-form {
+  width: 100%;
+  max-width: 350px; /* Adjust maximum width for better scaling */
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text alignment */
+}
+
+.change-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.change-form p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .change-container {
+    padding: 40px;
+    gap: 15px;
+  }
+
+  .change-form {
+    padding: 25px;
+    max-width: 320px;
+  }
+
+  .change-form h2 {
+    font-size: 22px;
+  }
+
+  .change-form p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .change-container {
+    padding: 30px;
+    gap: 10px;
+  }
+
+  .change-form {
+    padding: 20px;
+    max-width: 300px;
+    margin: 0px;
+  }
+
+  .change-form h2 {
+    font-size: 20px;
+  }
+
+  .change-form p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .change-container {
+    padding: 20px;
+    gap: 5px;
+  }
+
+  .change-form {
+    padding: 15px;
+    max-width: 280px;
+  }
+
+  .change-form h2 {
+    font-size: 18px;
+  }
+
+  .change-form p {
+    font-size: 13px;
+  }
+}
+
+
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-container input {
+  width: calc(100% - 20px); /* Ensure input fits well within the container */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%; /* Center icon vertically */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .password-container input {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  .password-toggle-icon {
+    right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .password-container input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .password-toggle-icon {
+    right: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .password-container input {
+    padding: 7px;
+    font-size: 11px;
+  }
+
+  .password-toggle-icon {
+    right: 4px;
+  }
+}
+
+
+.change-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.change-form button:hover {
+  background-color: #e23370;
+}
+
+.change-image {
+  width: 50%;
+  text-align: center; /* Center image on smaller screens */
+  /* padding-left: 80px; */
+}
+
+.change-image img {
+  margin: 0 auto; /* Center image horizontally */
+  width: 450px;
+ 
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .change-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .change-image {
+    width: 70%;
+  }
+
+  .change-image img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .change-container{
+    display: block;
+    flex-direction: column-reverse;
+    padding-left: 50px;
+  }
+
+  .change-form{
+    margin-bottom: 20px;
+  }
+
+  .change-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .change-image {
+    width: 100%;
+  }
+
+  .change-image img {
+    width: 300px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .change-container{
+    display: block;
+    flex-direction: column-reverse;
+  }
+
+  .change-form{
+    margin-left:10px ;
+    margin-bottom: 20px;
+  }
+  
+  .change-form button {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .change-image {
+    width: 100%;
+  }
+
+  .change-image img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+

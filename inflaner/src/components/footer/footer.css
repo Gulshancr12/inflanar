@@ -1,0 +1,98 @@
+.footer {
+  width: 100%;
+  height: auto; /* Adjust height for responsiveness */
+  bottom: 0;
+  background-image: url('background_footer.png');
+  background-size: cover; /* Ensure the background image covers the entire footer */
+  background-position: center;
+  padding: 20px 0; /* Add padding for better spacing on smaller devices */
+}
+
+.footer-main {
+  max-width: 1336px; /* Use max-width instead of width for better responsiveness */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.inflanar, .Quick-linking, .working-hours {
+  width: 100%; /* Default to 100% width */
+  height: auto; /* Adjust height for responsiveness */
+  margin-bottom: 20px; /* Add margin for spacing between sections */
+}
+
+@media (min-width: 768px) {
+  .inflanar, .Quick-linking, .working-hours {
+    width: 32%; /* Set width to 32% for tablets and larger screens */
+  }
+}
+
+.footer-logo, .footer-content, .quick-link-part1, .quick-link-part2, .footer-icon-timer, .location, .local-area {
+  padding: 10px; /* Adjust padding for responsiveness */
+}
+
+.footer-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon h4, .footer-icon-timer h4, .local-area h4 {
+  font-size: 16px; /* Adjust font size for responsiveness */
+  margin: 0;
+  padding: 5px 0; /* Adjust padding for responsiveness */
+}
+
+.footer-2 {
+  max-width: 1336px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 10px 0; /* Add padding for better spacing */
+}
+
+.copyright {
+  color: gray;
+  width: 100%; /* Default to 100% width */
+  font-size: 12px; /* Adjust font size for responsiveness */
+  text-align: center; /* Center-align text for better readability */
+  padding: 5px 0; /* Adjust padding for responsiveness */
+}
+
+.footer-2-icon {
+  width: 100%; /* Default to 100% width */
+  display: flex;
+  justify-content: center; /* Center-align icons for better readability */
+  padding: 10px 0; /* Adjust padding for responsiveness */
+}
+
+.footer-2-icon-item {
+  width: auto; /* Use auto width for flexibility */
+  color: aliceblue;
+  padding: 0 10px; /* Adjust padding for spacing between icons */
+  font-size: 18px; /* Adjust font size for responsiveness */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 1024px) {
+  .footer-main, .footer-2 {
+    flex-wrap: nowrap; /* Disable wrapping on larger screens */
+  }
+  
+  .inflanar, .Quick-linking, .working-hours {
+    margin-bottom: 0; /* Remove margin for larger screens */
+  }
+
+  .copyright, .footer-2-icon {
+    width: 50%; /* Set width to 50% for larger screens */
+  }
+
+  .copyright {
+    text-align: left; /* Align text to left for larger screens */
+  }
+
+  .footer-2-icon {
+    justify-content: flex-end; /* Align icons to right for larger screens */
+  }
+}

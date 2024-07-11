@@ -1,0 +1,36 @@
+/* src/LikeButtonOverlay.css */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.like-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.like-button:hover {
+    background-color: #0056b3;
+}
+
+.like-button.liked {
+    background-color: #28a745;
+}

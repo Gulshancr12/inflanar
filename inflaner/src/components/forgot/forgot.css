@@ -1,0 +1,119 @@
+/* forgot.css */
+
+/* Base Styles */
+.forgot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.forgot-form {
+  width: 430px;
+  margin-bottom: 20px; /* Add margin for spacing when stacked vertically */
+  padding-left: 140px;
+}
+
+.forgot-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.forgot-form p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-form input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.forgot-form a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+.forgot-form a:hover {
+  text-decoration: underline;
+}
+
+.forgot-image img {
+  width: 100%;
+  padding-left: 80px;
+  border-radius: 5px; /* Added for a more polished look */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .forgot-container {
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center-align text for better layout */
+    width: 50%;
+  }
+
+  .forgot-form {
+    margin-bottom: 30px; /* Add bottom margin to separate from the image */
+    width: 100%;
+  }
+
+  .forgot-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .forgot-image img {
+    max-width: 80%; /* Adjust image size to fit well within the container */
+    margin: 0 auto; /* Center image horizontally */
+  }
+}
+
+/* Additional Tweaks for Very Small Screens */
+@media (max-width: 480px) {
+  .forgot-container{
+    padding-left: 30px;
+    width: 80%;
+  }
+  .forgot-form h2 {
+    font-size: 20px; /* Reduce font size for headings */
+  }
+
+  .forgot-form{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .forgot-form p, .forgot-form button {
+    font-size: 14px; /* Reduce font size for text and buttons */
+  }
+
+  .forgot-container {
+    padding: 10px; /* Further reduce padding */
+  }
+  
+  .forgot-image{
+    padding-left: 0px;
+  }
+
+  .forgot-image img{
+    padding-left: 0px;
+  }
+}

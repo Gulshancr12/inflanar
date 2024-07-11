@@ -1,0 +1,360 @@
+body{
+    background: whitesmoke;
+}
+.page-header{
+    height: 300px;
+    display: flex;
+    background: linear-gradient(to bottom right, rgb(131, 222, 228), rgb(236, 231, 156), rgb(206, 112, 156), rgb(219, 236, 221));
+}
+#profile-img{
+    height: 300px;
+    width: 80%;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    background: rgb(255, 253, 253);
+    margin: 0px 20px 10px 20px;
+    box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
+
+}
+#img{
+    height: 200px;
+    width: 20px;
+    padding-left: 6px;
+    padding-top: 10px;
+    /* border: solid 1px black;
+    border-radius: 8px; */
+}
+
+#img img{
+    height: 220px;
+    width: 220px;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    
+}
+#engagement{
+    display: flex;
+    padding: 15px 10px 10px 10px;
+    gap:70px;
+}
+
+.content{
+    display: flex;
+    padding: 10px;
+  
+}
+
+.sidebar{
+    width: 20%;
+    height: 1000px;
+    border: 1px solid transparent;
+    border-radius: 8px ;
+    background: whitesmoke;
+    padding: 20px 20px 20px 15px;
+    box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
+    position: relative;
+    top: -250px;
+    margin-left: 30px;
+}
+
+.brief-content p{
+    color: black;
+    margin: 40px 10px 10px 10px;
+}
+
+#contact-no,#mail,#address{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content{
+    width: 80%;
+    position: relative;
+    top: -250px;
+    margin-left: 40px;
+}
+
+.skill-button{
+    height: 40px;
+    width: 90px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid transparent;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+h3{
+    margin: 20px 0px 10px 0px;
+}
+
+.header-content{
+    display: flex;
+    /* position: relative;
+    top: -250px; */
+    gap: 600px;
+    margin-left: 50px;
+    margin-bottom: 120px;
+
+}
+
+.contact-icon{
+    color: #ff0073;
+}
+
+#icon1 img,#icon2 img,#icon3 img,#icon4 img{
+    height: 30px;
+    width: 30px;
+}
+
+.contact-info,.skill-content{
+    margin: 10px 10px 30px 10px;
+}
+
+#profile-detail{
+    margin-top: 40px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: start;
+    gap: 0px;
+    width: 180px;
+   
+}
+#icon2 img{
+    height: 45px;
+    width: 45px;
+}
+#icon1 img,#icon3 img,#icon4 img{
+   height: 40px;
+   width: 40px;
+}
+.ytbutton{
+    height: 30px;
+    width: 90px;
+    background: rgb(34, 150, 245);
+    color: azure;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#profile-name{
+    margin-bottom: 10px;
+}
+
+.hireme{
+    height: 30px;
+    width: 150px;
+    background: rgb(34, 150, 245);
+    color: azure;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+#profile-rating{
+    height: 20px;
+    width: 90px;
+    border: 1px solid transparent;
+    background: #ff0073;
+    color: aliceblue;
+    border-radius: 3px;
+
+}
+.follow{
+    background: white;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 80px;
+}
+#social{
+    display: block;
+    gap: 20px;
+    width: 150px;
+}
+.jobStatus{
+    display: flex;
+    margin: 20px 0px 25px 30px;
+    gap: 35px;
+}
+#active-job,#pending-job,#cancel-job,#complete-job{
+    height: 100px;
+    width: 200px;
+    background: #ffc4d9;
+    color: green;
+    margin: 0px 0px 20px 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#pending-job{
+    background: rgb(252, 246, 204);
+}
+
+#cancel-job{
+    background: rgb(255, 213, 255);
+}
+
+#complete-job{
+    background: #d2fbcf;
+}
+
+#active-job h4,#pending-job h4,#cancel-job h4,#complete-job h4{
+    color: black;
+    margin-top: 10px;
+}
+.vlog-section{
+    display: flex;
+    gap: 33px;
+    margin-left: 50px;
+}
+#block-1,#block-2,#block-3{
+    height: 500px;
+    width: 28%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+#vlog-1,#vlog-2,#vlog-3{
+    display: block;
+    margin: 0px 0px 15px 5px;
+    height: 30%;
+    justify-content: center;
+    width: 97%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    /* box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px; */
+
+    
+}
+#block-1 img,#block-2 img,#vlog-1 img,#vlog-2 img,#vlog-3 img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    /* box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px; */
+
+}
+.services{
+    height: 600px;
+    width: 100%;
+}
+.services h2{
+    margin: 30px 10px 30px 50px;
+}
+#row-1{
+    display: flex;
+    gap: 40px;
+    margin: 10px 10px 0px 50px;
+}
+#service-1,#service-2,#service-3{
+    height: 500px;
+    width: 28%;
+    border: 1px solid transparent ;
+    border-radius: 10px;
+    box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
+
+    background: white;
+}
+
+#upper-part{
+    height: 45%;
+    position: relative;
+}
+
+#lower-part{
+    height: 55%;
+}
+
+#upper-part img{
+    height: 100%;
+    width: 310px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0px;
+}
+#mini-profile img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+#name{
+    font-size: 15px;
+}
+.price{
+    display: flex;
+    margin: 20px 0px 10px 15px;
+    gap: 90px;
+}
+.profile-rating{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 10px 15px;
+    gap: 40px;
+}
+#stars{
+    font-size: 20px;
+    color: rgb(249, 187, 53);
+}
+#tag{
+    font-size: 15px;
+    color: dodgerblue;
+}
+#fees{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0073;
+    
+}
+.title{
+    font-size: 35px;
+    margin: 0px 0px 10px 15px;
+    /* font-weight: bold; */
+
+}
+hr{
+    margin: 0px 15px 10px 15px;
+    /* background: grey; */
+    border-top: 1px solid rgba(153, 150, 150, 0.399);
+}
+#mini-id{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.book-now{
+    text-align: center;
+}
+.book-now button{
+    width: 285px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #ffcad0;
+    font-size: 17px;
+}
+.like-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.like-button.liked {
+    color: red;
+}
+.overlay button{
+    color: rgb(255, 254, 254);
+}

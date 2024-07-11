@@ -1,0 +1,821 @@
+.about {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+ /* Base styles */
+.about-header {
+  background: linear-gradient(90deg, #841df2 0%, #2370f5 100%);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  height: 200px;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  padding-top: 35px;
+}
+
+.about-header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+.shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.7;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 20%;
+  left: 10%;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 30%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgba(255, 255, 255, 0.3);
+  top: 70%;
+  left: 80%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Changed to column for better stacking on smaller devices */
+  align-items: center;
+  padding: 50px;
+}
+
+.about-image {
+  width: 100%; /* Set to 100% for better responsiveness */
+  max-width: 400px;
+  margin: 20px 0; /* Adjusted margin for better spacing */
+}
+
+.about-text {
+  width: 100%; /* Set to 100% for better responsiveness */
+  max-width: 600px;
+  margin: 20px 0; /* Adjusted margin for better spacing */
+}
+
+.about-text h2 {
+  color: #6a11cb;
+  font-size: 1.2em;
+}
+
+.about-text h3 {
+  font-size: 1.8em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #777;
+}
+
+.about-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  display: flex;
+  align-items: center;
+}
+
+.about-text ul li .icon {
+  font-size: 1.5em;
+  color: #6a11cb;
+  margin-right: 10px;
+}
+
+.about-text ul li h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.about-text ul li p {
+  color: #777;
+  margin: 0;
+}
+
+/* Media Queries */
+
+/* Tablets and above */
+@media (min-width: 600px) {
+  .about-content {
+    flex-direction: row; /* Changed to row for larger screens */
+    margin-left: 20px;
+  }
+  .about-image {
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .about-text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-content{
+    display: block;
+    align-items: center;
+    padding-left:100px;
+  }
+
+  .about-image {
+    width: 70%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+}
+
+/* Laptops and above */
+@media (min-width: 1024px) {
+  .about-header {
+    height: 250px;
+  }
+
+  .about-header h1 {
+    font-size: 3em;
+  }
+  .icon{
+    width: 50%;
+  }
+  .about-header p {
+    font-size: 1.5em;
+  }
+
+  .about-content {
+    padding: 50px 100px;
+  }
+
+  .about-image {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .about-text {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+
+/* Base styles */
+.trusted-small {
+  background-color: #f3f5ff;
+  border-radius: 10px;
+  box-shadow: inset;
+  width: 95%;
+  height: 95%;
+  margin: 0 auto; /* Centered with auto margins */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.trusted-text {
+  width: 100%; /* Set to 100% for better responsiveness */
+  margin: 0 auto; /* Centered with auto margins */
+  padding-top: 20px; /* Reduced padding */
+  text-align: center; /* Center-align text */
+}
+
+.trusted-text h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em; /* Adjusted font size */
+  font-weight: bold;
+  max-width: 100%; /* Set to 100% for better responsiveness */
+  margin: 0 auto; /* Centered with auto margins */
+}
+
+.trusted-text p {
+  max-width: 100%; /* Set to 100% for better responsiveness */
+  color: #777;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto; /* Centered with auto margins */
+}
+
+.trusted-icons {
+  border-radius: 10px;
+  max-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.trusted-icons img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .trusted-icons {
+    max-height: 250px; /* Adjusted max-height */
+    gap: 15px; /* Reduced gap for smaller screens */
+  }
+  .trusted-icons img {
+    max-width: 120px; /* Adjusted max-width */
+  }
+  .trusted-text p {
+    font-size: 1.2em;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trusted-icons {
+    max-height: 200px; /* Further adjusted max-height */
+    gap: 10px; /* Further reduced gap */
+  }
+  .trusted-icons img {
+    max-width: 100px; /* Further adjusted max-width */
+  }
+  .trusted-text p {
+    font-size: 1.2em;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .trusted-icons {
+    max-height: 150px; /* Further adjusted max-height */
+    gap: 5px; /* Further reduced gap */
+  }
+  .trusted-icons img {
+    max-width: 80px; /* Further adjusted max-width */
+  }
+  .trusted-text p {
+    font-size: 1.2em;
+    padding-right: 10px;
+  }
+}
+
+
+
+
+/* Tablets and above */
+@media (min-width: 600px) {
+  .trusted-small {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .trusted-text {
+    max-width: 70%;
+    padding-top: 40px;
+  }
+
+  .trusted-text h2 {
+    font-size: 2em;
+  }
+
+  .trusted-text p {
+    font-size: 1.2em;
+    padding-right: 10px;
+  }
+ 
+}
+
+/* Laptops and above */
+@media (min-width: 1024px) {
+  .trusted-small {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .trusted-text {
+    max-width: 60%;
+    padding-top: 50px;
+  }
+
+  .trusted-text h2 {
+    font-size: 2.5em;
+  }
+
+  .trusted-text p {
+    font-size: 1.5em;
+  }
+
+}
+
+
+/* Base styles */
+.icon1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Reduced gap for smaller screens */
+}
+
+.icon2 {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Reduced gap for smaller screens */
+  margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+/* Media Queries */
+
+/* Tablets and above */
+@media (min-width: 600px) {
+  .icon1 {
+    gap: 10px; /* Increased gap for larger screens */
+  }
+
+  .icon2 {
+    gap: 30px; /* Increased gap for larger screens */
+    margin-top: 0; /* Reset margin */
+  }
+}
+
+/* Laptops and above */
+@media (min-width: 1024px) {
+  .icon1 {
+    gap: 50px; /* Original gap for larger screens */
+  }
+
+  .icon2 {
+    gap: 40px; /* Original gap for larger screens */
+    margin-top: -20px; /* Original margin for larger screens */
+  }
+}
+
+
+/* Base styles */
+.value-image {
+  position: relative;
+  height: 300px; /* Adjusted height for smaller screens */
+  width: 100%;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(30, 90, 239, 0.5), rgba(171, 33, 246, 0.647));
+  z-index: 1;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.value-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+  z-index: 2;
+}
+
+.value-text h4 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.value-text h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.value-text p {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .value-text h4 {
+    font-size: 1.1em;
+  }
+
+  .value-text h1 {
+    font-size: 1.8em;
+  }
+
+  .value-text p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .value-text h4 {
+    font-size: 1em;
+  }
+
+  .value-text h1 {
+    font-size: 1.6em;
+  }
+
+  .value-text p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .value-text h4 {
+    font-size: 0.9em;
+  }
+
+  .value-text h1 {
+    font-size: 1.4em;
+  }
+
+  .value-text p {
+    font-size: 0.7em;
+  }
+}
+
+
+
+/* Tablets and above */
+@media (min-width: 600px) {
+  .value-image {
+    height: 400px; /* Adjusted height for larger screens */
+  }
+
+}
+
+/* Laptops and above */
+@media (min-width: 1024px) {
+  .value-image {
+    height: 500px; /* Original height for larger screens */
+  }
+}
+
+
+/* Base styles */
+.vision-big {
+  background-color: white;
+  padding: 20px 0; /* Adjusted padding for smaller screens */
+  margin-top: 70px;
+  height: auto; /* Adjusted height for better responsiveness */
+}
+
+.vision {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  margin: 0 auto; /* Centered with auto margins */
+  justify-content: space-between;
+  text-align: center;
+}
+
+.vision-item {
+  background: white;
+  padding: 20px; /* Adjusted padding for smaller screens */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.vision-item:hover {
+  transform: scale(1.05);
+}
+
+.vision-item h3 {
+  font-size: 1.2em; /* Adjusted font size for smaller screens */
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.vision-item p {
+  font-size: 0.9em; /* Adjusted font size for smaller screens */
+  color: #666;
+}
+
+.vision-icon {
+  font-size: 1.5em; /* Adjusted font size for smaller screens */
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+/* Media Queries */
+
+/* Tablets and above */
+@media (min-width: 600px) {
+  .vision {
+    flex-direction: row; /* Arrange items horizontally on larger screens */
+    margin: -50px auto; /* Adjusted margin for larger screens */
+  }
+
+  .vision-item {
+    margin: 0 10px; /* Adjusted margin for larger screens */
+    padding: 25px; /* Adjusted padding for larger screens */
+  }
+
+  .vision-item h3 {
+    font-size: 1.4em; /* Adjusted font size for larger screens */
+    margin-bottom: 15px; /* Adjusted margin for larger screens */
+  }
+
+  .vision-item p {
+    font-size: 1em; /* Adjusted font size for larger screens */
+  }
+
+  .vision-icon {
+    font-size: 1.8em; /* Adjusted font size for larger screens */
+    margin-bottom: 15px; /* Adjusted margin for larger screens */
+  }
+}
+
+/* Laptops and above */
+@media (min-width: 1024px) {
+  .vision-big {
+    padding: 50px 0; /* Original padding for larger screens */
+  }
+
+  .vision {
+    margin: -100px auto; /* Original margin for larger screens */
+  }
+
+  .vision-item {
+    padding: 30px; /* Original padding for larger screens */
+  }
+
+  .vision-item h3 {
+    font-size: 1.5em; /* Original font size for larger screens */
+    margin-bottom: 20px; /* Original margin for larger screens */
+  }
+
+  .vision-item p {
+    font-size: 1em; /* Original font size for larger screens */
+  }
+
+  .vision-icon {
+    font-size: 2em; /* Original font size for larger screens */
+    margin-bottom: 20px; /* Original margin for larger screens */
+  }
+}
+
+
+/* Base Styles */
+.process {
+  background: white;
+  height: auto; /* Set to auto for better responsiveness */
+  padding: 20px 10px; /* Added padding */
+  margin-top: 80px;
+}
+
+.process h4 {
+  color: dimgray;
+  text-align: center;
+  padding-bottom: 10px; /* Adjusted padding */
+  text-decoration-line: underline;
+  text-decoration-color: crimson;
+  font-size: 1.2em; /* Adjusted font size for smaller screens */
+}
+
+.process h2 {
+  text-align: center;
+  padding-bottom: 10px; /* Adjusted padding */
+  font-size: 1.5em; /* Adjusted font size for smaller screens */
+}
+
+.upperRow, .lowerRow {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  justify-content: center;
+  height: auto; /* Set to auto for better responsiveness */
+  gap: 10px; /* Reduced gap for smaller screens */
+  margin: 20px 10px; /* Adjusted margin for smaller screens */
+}
+
+.workflow {
+  display: block;
+  gap: 20px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+#step-1, #step-2, #step-3, #step-4 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjusted gap for smaller screens */
+  margin: 20px 0; /* Adjusted margin for better spacing */
+}
+
+#number {
+  height: 25px;
+  width: 25px;
+  border: 1px solid transparent;
+  border-radius: 50%; /* Ensure full circle with border-radius */
+  text-align: center;
+  font-size: 15px;
+  background: #fc2795;
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+}
+
+#heading {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+/* Responsive Styles */
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  .upperRow, .lowerRow {
+    flex-direction: row; /* Stack items horizontally */
+    gap: 15px; /* Adjusted gap */
+    margin: 20px 20px; /* Adjusted margin */
+  }
+
+  #step-1, #step-2, #step-3, #step-4 {
+    gap: 40px; /* Adjusted gap */
+    margin: 30px 0; /* Adjusted margin */
+  }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  .process h4 {
+    font-size: 1.5em; /* Adjusted font size */
+  }
+
+  .process h2 {
+    font-size: 2em; /* Adjusted font size */
+    padding-top: 0px; 
+  }
+
+  .upperRow, .lowerRow {
+    gap: 30px; /* Adjusted gap */
+    margin: 20px 30px; /* Adjusted margin */
+  }
+
+  #step-1, #step-2, #step-3, #step-4 {
+    gap: 60px; /* Adjusted gap */
+    margin: 40px 0; /* Adjusted margin */
+  }
+}
+
+/* Large devices (1200px and up) */
+@media (min-width: 1200px) {
+  .process h4 {
+    font-size: 2em; /* Adjusted font size */
+  }
+
+  .process h2 {
+    font-size: 2.5em; /* Adjusted font size */
+    padding-top: 0px;
+  }
+
+  .upperRow, .lowerRow {
+    gap: 40px; /* Adjusted gap */
+    margin: 20px 50px; /* Adjusted margin */
+  }
+
+  #step-1, #step-2, #step-3, #step-4 {
+    gap: 80px; /* Adjusted gap */
+    margin: 50px 0; /* Adjusted margin */
+  }
+}
+
+
+.founder {
+  background: white;
+  height: 600px;
+  padding-left: 50px;
+  display: flex;
+}
+.contentContainer {
+  width: 50%;
+  padding-top: 100px;
+}
+.contentContainer h5 {
+  color: deepskyblue;
+  font-size: 13px;
+}
+.contentContainer h2 {
+  font-size: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.imgContainer {
+  width: 50%;
+  padding-left: 150px;
+}
+.imgContainer img{
+  height: 600px;
+  width: 600px;
+}
+.uppercontent {
+  display: flex;
+}
+p {
+  font-size: 15px;
+  color: darkgrey;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .founder {
+      flex-direction: column;
+      padding-left: 20px;
+      height: auto;
+  }
+  .contentContainer, .imgContainer {
+      width: 100%;
+      padding-left: 0;
+  }
+  .contentContainer {
+      padding-top: 50px;
+  }
+  .contentContainer h2 {
+      font-size: 35px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentContainer h2 {
+      font-size: 30px;
+  }
+  .contentContainer {
+      padding-top: 30px;
+  }
+  .imgContainer img{
+      width: 100%;
+      padding-right: 0px;
+      height: auto;
+  }
+  p {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contentContainer h2 {
+      font-size: 25px;
+  }
+  .contentContainer h5 {
+      font-size: 12px;
+  }
+  .imgContainer img{
+      width: 100%;
+      padding-right: 0px;
+      height: auto;
+  }
+  p {
+      font-size: 12px;
+  }
+}
+
+/* .arrows{
+  height: 100px;
+  display: flex;justify-content: center;
+} */
